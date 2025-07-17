@@ -1,83 +1,65 @@
-# ⚡ Electricity Usage Analysis per Apartment (July 2025)
+# AI and Machine Learning Training Project
 
-This project simulates electricity usage for 20 apartments over a period of 30 days (July 2025). It performs data analysis, anomaly detection, and rich visualizations including 2D, 3D, and heatmaps using Python libraries like `pandas`, `matplotlib`, `seaborn`, and `numpy`.
+## 📌 Overview
 
----
+This project is focused on training AI and machine learning models using Python. It covers the full ML pipeline — from data preprocessing to model training and evaluation. The goal is to develop a robust, reusable, and modular ML framework that can be adapted to different datasets and tasks.
 
-## 📊 Project Features
+## 🚀 Features
 
-- ✅ Simulation of electricity consumption data for 20 apartments
-- ✅ Calculation of:
-  - Total usage per apartment
-  - Daily usage across all apartments
-- ✅ Summary statistics & null check
-- ✅ Visualizations:
-  - Bar plot (total usage)
-  - Line plot
-  - Histogram
-  - Pie chart
-  - 3D bar plot
-  - Heatmap
-  - 3D wireframe
-- ✅ Anomaly detection for high electricity usage
-- ✅ Threshold based on:  
-  `mean + 2 × standard deviation`
+- 📊 Data preprocessing and cleaning
+- 📦 Train/Test split or K-Fold Cross Validation
+- 🧠 Model training using scikit-learn / TensorFlow / PyTorch
+- 📈 Model evaluation with accuracy, precision, recall, and confusion matrix
+- 💾 Model saving and loading with `joblib`, `pickle`, or model checkpoints
+- 📉 Optional: Graphical metrics (matplotlib, seaborn, TensorBoard)
 
----
+## 🛠️ Tech Stack
 
-## 📁 File Structure
+- **Language**: Python 3.x
+- **Libraries**: 
+  - `numpy`, `pandas`
+  - `scikit-learn`
+  - `matplotlib`, `seaborn`
+  - *(Optional)* `tensorflow`, `keras`, `torch`
 
-- `main.ipynb` — Main notebook with code and visualizations  
-- `README.md` — This file  
-- `requirements.txt` *(optional)* — Python package dependencies
+## 📁 Project Structure
 
----
+project/
+├── data/ # Input datasets
+├── notebooks/ # Jupyter notebooks for exploration
+├── scripts/ # Python scripts for training and evaluation
+│ ├── preprocess.py
+│ ├── train.py
+│ ├── evaluate.py
+├── models/ # Saved models
+├── output/ # Logs, metrics, and visualizations
+├── requirements.txt # Dependencies
+└── README.md # This file
 
-## 📌 Data Generation Details
 
-- **Apartments:** Aot_1 to Aot_20  
-- **Dates:** July 1, 2025 to July 30, 2025  
-- **Electricity Usage:** Random values from a normal distribution  
-  - Mean = 20 kWh  
-  - Standard deviation = 5  
+📊 Sample Output
+Include here:
 
----
+Accuracy scores
 
-## 🖼️ Visualizations Included
+Confusion matrix
 
-1. **Bar Graph** — Total usage per apartment  
-2. **Line Plot** — Usage comparison  
-3. **Histogram** — Distribution of electricity usage  
-4. **Pie Chart** — Share of usage per apartment  
-5. **3D Bar Plot** — Usage per apartment per day  
-6. **Heatmap** — Usage pattern over time  
-7. **3D Wireframe** — Apartment vs Date vs Usage  
+Example graphs (loss vs. epochs, etc.)
 
----
+📈 Future Work
+Add hyperparameter tuning (e.g., GridSearchCV, Optuna)
 
-## 🚨 Anomaly Detection
+Add deep learning support (e.g., CNNs with TensorFlow or PyTorch)
 
-- Any reading where usage > `mean + 2*std` is marked as **high usage**
-- Such entries are flagged in the dataset with `High_usage_flag = True`
+Deploy model using FastAPI / Flask
 
----
+Add MLOps (experiment tracking, versioning, pipelines)
 
-## 🛠️ Technologies Used
+🧠 Learning Goals
+Understand the end-to-end ML pipeline
 
-| Tool | Purpose |
-|------|---------|
-| Python | Programming Language |
-| pandas | Data manipulation |
-| numpy | Random number generation |
-| matplotlib | Plotting library |
-| seaborn | Statistical visualization |
+Learn best practices in AI/ML project structuring
 
----
+Practice training, evaluation, and model selection
 
-## ▶️ How to Run
-
-1. Clone or download this repository
-2. Make sure the following Python libraries are installed:
-
-```bash
-pip install pandas numpy matplotlib seaborn
+Apply real-world data handling
